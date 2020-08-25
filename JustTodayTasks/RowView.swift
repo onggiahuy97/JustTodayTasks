@@ -13,7 +13,7 @@ struct RowView: View {
     let checkmark = Image(systemName: "checkmark")
     
     var body: some View {
-        Button(action: { row.isDone.toggle() }) {
+        Button(action: { self.row.isDone.toggle() }) {
             HStack {
                 if row.isDone { checkmark } else { checkmark.hidden() }
                 Text(row.name).strikethrough(row.isDone)
@@ -29,6 +29,8 @@ struct RowView: View {
 struct RowViewViewOnly: View {
     var row: Task
     
+    var showDate = true
+    
     let checkmark = Image(systemName: "checkmark")
     
     var body: some View {
@@ -36,7 +38,9 @@ struct RowViewViewOnly: View {
             if row.isDone { checkmark } else { checkmark.hidden() }
             Text(row.name).strikethrough(row.isDone)
             Spacer()
-            Text(row.date.toString()).font(.subheadline).foregroundColor(.secondary)
+            if !showDate { EmptyView() } else {
+                Text(row.date.toString()).font(.subheadline).foregroundColor(.secondary)
+            }
         }
     }
 }

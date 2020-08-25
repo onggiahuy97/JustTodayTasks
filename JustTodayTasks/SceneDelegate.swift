@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let model = TaskModel()
+        UITextField.appearance().tintColor = UIColor(named: "AccentColor")
         let contentView = ContentView(model: model)
 
         // Use a UIHostingController as window root view controller.

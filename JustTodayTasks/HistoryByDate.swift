@@ -15,21 +15,21 @@ struct HistoryByDate: View {
         NavigationView {
             Form {
                 Section(header: Text("History")) {
-                    ForEach(model.historyTasks, id: \.self) { row in
+                    ForEach(model.historyTasks.reversed(), id: \.self) { row in
                         RowViewViewOnly(row: row)
                     }
                     .onMove { (from, to) in
-                        model.historyTasks.move(fromOffsets: from, toOffset: to)
+                        self.model.historyTasks.move(fromOffsets: from, toOffset: to)
                     }
                     .onDelete { (indexSet) in
-                        model.historyTasks.remove(atOffsets: indexSet)
+                        self.model.historyTasks.remove(atOffsets: indexSet)
                     }
                 }
             }
             .navigationBarTitle(Text("History"))
-            .navigationBarItems(leading: EditButton(),
+            .navigationBarItems(leading: EditButton().foregroundColor(.AccentColor()),
                                 trailing:
-                                    Button(action: { presentation.wrappedValue.dismiss() }) { Text("Done") }
+                Button(action: { self.presentation.wrappedValue.dismiss() }) { Text("Done") }.foregroundColor(.AccentColor())
             )
         }
     }

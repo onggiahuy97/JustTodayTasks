@@ -39,7 +39,7 @@ class TaskModel: ObservableObject {
 
 extension TaskModel {
     
-    private static func tasksURL() -> URL {
+    static func tasksURL() -> URL {
         return URL(fileURLWithPath: "Tasks",relativeTo: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first).appendingPathExtension("json")
     }
     
@@ -59,11 +59,10 @@ extension TaskModel {
     
     func dataDidLoad() {
         let decoder = JSONDecoder()
-        
         do {
             let data = try Data(contentsOf: TaskModel.tasksURL())
             let allTasks = try decoder.decode([Task].self, from: data)
-            tasks = allTasks.filter { $0.date.toDay()}
+            tasks = allTasks.filter { $0.date.toDay() }
             historyTasks = allTasks.filter { !$0.date.toDay() }
         } catch let error {
             print(error)

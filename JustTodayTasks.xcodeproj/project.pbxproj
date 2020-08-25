@@ -16,13 +16,56 @@
 		3E5C3B7224DDCF3200B6FD26 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C3B7124DDCF3200B6FD26 /* RowView.swift */; };
 		3E5C3B7424DDCF3B00B6FD26 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C3B7324DDCF3B00B6FD26 /* SectionView.swift */; };
 		3E5C3B7624DDCF4F00B6FD26 /* HistoryByDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C3B7524DDCF4F00B6FD26 /* HistoryByDate.swift */; };
+		3E767CCE24F4639A00475179 /* MonthlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CCD24F4639A00475179 /* MonthlyView.swift */; };
+		3E767CD024F46E5E00475179 /* UITabBarController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CCF24F46E5E00475179 /* UITabBarController+Extension.swift */; };
+		3E767CD224F46E7E00475179 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CD124F46E7E00475179 /* TextCell.swift */; };
+		3E767CD424F47FDB00475179 /* MonthlyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CD324F47FDB00475179 /* MonthlyTask.swift */; };
 		3E81765C24DDCC9E00249E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81765B24DDCC9E00249E20 /* AppDelegate.swift */; };
 		3E81765E24DDCC9E00249E20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81765D24DDCC9E00249E20 /* SceneDelegate.swift */; };
 		3E81766024DDCC9E00249E20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81765F24DDCC9E00249E20 /* ContentView.swift */; };
 		3E81766224DDCC9F00249E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E81766124DDCC9F00249E20 /* Assets.xcassets */; };
 		3E81766524DDCC9F00249E20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E81766424DDCC9F00249E20 /* Preview Assets.xcassets */; };
 		3E81766824DDCC9F00249E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E81766624DDCC9F00249E20 /* LaunchScreen.storyboard */; };
+		3EB0668124E0E571002C5F4A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB0668024E0E570002C5F4A /* WidgetKit.framework */; };
+		3EB0668324E0E571002C5F4A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB0668224E0E571002C5F4A /* SwiftUI.framework */; };
+		3EB0668624E0E571002C5F4A /* JustTasksWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0668524E0E571002C5F4A /* JustTasksWidget.swift */; };
+		3EB0668924E0E572002C5F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB0668824E0E572002C5F4A /* Assets.xcassets */; };
+		3EB0668B24E0E572002C5F4A /* JustTasksWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0668724E0E571002C5F4A /* JustTasksWidget.intentdefinition */; };
+		3EB0668C24E0E572002C5F4A /* JustTasksWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0668724E0E571002C5F4A /* JustTasksWidget.intentdefinition */; };
+		3EB0668F24E0E572002C5F4A /* JustTasksWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3EB0667F24E0E570002C5F4A /* JustTasksWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3EB066E424E1AF2F002C5F4A /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C3B6D24DDCF0200B6FD26 /* TaskModel.swift */; };
+		3EB066E524E1AF72002C5F4A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C3B6B24DDCEF500B6FD26 /* Task.swift */; };
+		3EB066E624E1AF7F002C5F4A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5DDE424E058740046D782 /* Color+Extension.swift */; };
+		3EB066E824E1AF7F002C5F4A /* ConvertDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C3B6624DDCED300B6FD26 /* ConvertDate.swift */; };
+		3EB066E924E1AF7F002C5F4A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C3B6824DDCEE300B6FD26 /* Date+Extension.swift */; };
+		3EB066EA24E1B010002C5F4A /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C3B7124DDCF3200B6FD26 /* RowView.swift */; };
+		3EBC111624DEFB900036DC95 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBC111524DEFB900036DC95 /* CloudKit.framework */; };
+		3EF5DDE524E058740046D782 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5DDE424E058740046D782 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EB0668D24E0E572002C5F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E81765024DDCC9E00249E20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EB0667E24E0E570002C5F4A;
+			remoteInfo = JustTasksWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3EB0669024E0E572002C5F4A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3EB0668F24E0E572002C5F4A /* JustTasksWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3E5C3B6424DDCEC100B6FD26 /* EndEditting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndEditting.swift; sourceTree = "<group>"; };
@@ -35,6 +78,10 @@
 		3E5C3B7324DDCF3B00B6FD26 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		3E5C3B7524DDCF4F00B6FD26 /* HistoryByDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryByDate.swift; sourceTree = "<group>"; };
 		3E5C3B7724DDCFC500B6FD26 /* JustTodayTasks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustTodayTasks.entitlements; sourceTree = "<group>"; };
+		3E767CCD24F4639A00475179 /* MonthlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyView.swift; sourceTree = "<group>"; };
+		3E767CCF24F46E5E00475179 /* UITabBarController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extension.swift"; sourceTree = "<group>"; };
+		3E767CD124F46E7E00475179 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		3E767CD324F47FDB00475179 /* MonthlyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyTask.swift; sourceTree = "<group>"; };
 		3E81765824DDCC9E00249E20 /* JustTodayTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustTodayTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81765B24DDCC9E00249E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E81765D24DDCC9E00249E20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +90,15 @@
 		3E81766424DDCC9F00249E20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E81766724DDCC9F00249E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E81766924DDCC9F00249E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB0667F24E0E570002C5F4A /* JustTasksWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JustTasksWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB0668024E0E570002C5F4A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3EB0668224E0E571002C5F4A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3EB0668524E0E571002C5F4A /* JustTasksWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustTasksWidget.swift; sourceTree = "<group>"; };
+		3EB0668724E0E571002C5F4A /* JustTasksWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = JustTasksWidget.intentdefinition; sourceTree = "<group>"; };
+		3EB0668824E0E572002C5F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EB0668A24E0E572002C5F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBC111524DEFB900036DC95 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		3EF5DDE424E058740046D782 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +106,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBC111624DEFB900036DC95 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB0667C24E0E570002C5F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB0668324E0E571002C5F4A /* SwiftUI.framework in Frameworks */,
+				3EB0668124E0E571002C5F4A /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +128,8 @@
 				3E5C3B6424DDCEC100B6FD26 /* EndEditting.swift */,
 				3E5C3B6624DDCED300B6FD26 /* ConvertDate.swift */,
 				3E5C3B6824DDCEE300B6FD26 /* Date+Extension.swift */,
+				3EF5DDE424E058740046D782 /* Color+Extension.swift */,
+				3E767CCF24F46E5E00475179 /* UITabBarController+Extension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -71,15 +139,27 @@
 			children = (
 				3E5C3B6B24DDCEF500B6FD26 /* Task.swift */,
 				3E5C3B6D24DDCF0200B6FD26 /* TaskModel.swift */,
+				3E767CD324F47FDB00475179 /* MonthlyTask.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3E767CCC24F4638B00475179 /* Monthly */ = {
+			isa = PBXGroup;
+			children = (
+				3E767CCD24F4639A00475179 /* MonthlyView.swift */,
+				3E767CD124F46E7E00475179 /* TextCell.swift */,
+			);
+			path = Monthly;
 			sourceTree = "<group>";
 		};
 		3E81764F24DDCC9E00249E20 = {
 			isa = PBXGroup;
 			children = (
 				3E81765A24DDCC9E00249E20 /* JustTodayTasks */,
+				3EB0668424E0E571002C5F4A /* JustTasksWidget */,
 				3E81765924DDCC9E00249E20 /* Products */,
+				3EBC111424DEFB900036DC95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				3E81765824DDCC9E00249E20 /* JustTodayTasks.app */,
+				3EB0667F24E0E570002C5F4A /* JustTasksWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +175,7 @@
 		3E81765A24DDCC9E00249E20 /* JustTodayTasks */ = {
 			isa = PBXGroup;
 			children = (
+				3E767CCC24F4638B00475179 /* Monthly */,
 				3E5C3B7724DDCFC500B6FD26 /* JustTodayTasks.entitlements */,
 				3E5C3B6A24DDCEEC00B6FD26 /* Model */,
 				3E5C3B6324DDCEB700B6FD26 /* Helper */,
@@ -120,6 +202,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3EB0668424E0E571002C5F4A /* JustTasksWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3EB0668524E0E571002C5F4A /* JustTasksWidget.swift */,
+				3EB0668724E0E571002C5F4A /* JustTasksWidget.intentdefinition */,
+				3EB0668824E0E572002C5F4A /* Assets.xcassets */,
+				3EB0668A24E0E572002C5F4A /* Info.plist */,
+			);
+			path = JustTasksWidget;
+			sourceTree = "<group>";
+		};
+		3EBC111424DEFB900036DC95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EBC111524DEFB900036DC95 /* CloudKit.framework */,
+				3EB0668024E0E570002C5F4A /* WidgetKit.framework */,
+				3EB0668224E0E571002C5F4A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,15 +233,34 @@
 				3E81765424DDCC9E00249E20 /* Sources */,
 				3E81765524DDCC9E00249E20 /* Frameworks */,
 				3E81765624DDCC9E00249E20 /* Resources */,
+				3EB0669024E0E572002C5F4A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3EB0668E24E0E572002C5F4A /* PBXTargetDependency */,
 			);
 			name = JustTodayTasks;
 			productName = JustTodayTasks;
 			productReference = 3E81765824DDCC9E00249E20 /* JustTodayTasks.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3EB0667E24E0E570002C5F4A /* JustTasksWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB0669324E0E572002C5F4A /* Build configuration list for PBXNativeTarget "JustTasksWidgetExtension" */;
+			buildPhases = (
+				3EB0667B24E0E570002C5F4A /* Sources */,
+				3EB0667C24E0E570002C5F4A /* Frameworks */,
+				3EB0667D24E0E570002C5F4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustTasksWidgetExtension;
+			productName = JustTasksWidgetExtension;
+			productReference = 3EB0667F24E0E570002C5F4A /* JustTasksWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -150,6 +272,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					3E81765724DDCC9E00249E20 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					3EB0667E24E0E570002C5F4A = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -168,6 +293,7 @@
 			projectRoot = "";
 			targets = (
 				3E81765724DDCC9E00249E20 /* JustTodayTasks */,
+				3EB0667E24E0E570002C5F4A /* JustTasksWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +309,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3EB0667D24E0E570002C5F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB0668924E0E572002C5F4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -192,20 +326,49 @@
 			files = (
 				3E81765C24DDCC9E00249E20 /* AppDelegate.swift in Sources */,
 				3E5C3B7224DDCF3200B6FD26 /* RowView.swift in Sources */,
+				3E767CD224F46E7E00475179 /* TextCell.swift in Sources */,
 				3E5C3B7424DDCF3B00B6FD26 /* SectionView.swift in Sources */,
+				3E767CD424F47FDB00475179 /* MonthlyTask.swift in Sources */,
 				3E81765E24DDCC9E00249E20 /* SceneDelegate.swift in Sources */,
 				3E5C3B6724DDCED300B6FD26 /* ConvertDate.swift in Sources */,
 				3E81766024DDCC9E00249E20 /* ContentView.swift in Sources */,
+				3EB0668C24E0E572002C5F4A /* JustTasksWidget.intentdefinition in Sources */,
 				3E5C3B6524DDCEC100B6FD26 /* EndEditting.swift in Sources */,
 				3E5C3B6C24DDCEF500B6FD26 /* Task.swift in Sources */,
+				3E767CCE24F4639A00475179 /* MonthlyView.swift in Sources */,
 				3E5C3B6E24DDCF0200B6FD26 /* TaskModel.swift in Sources */,
 				3E5C3B7624DDCF4F00B6FD26 /* HistoryByDate.swift in Sources */,
 				3E5C3B7024DDCF2100B6FD26 /* TaskDetail.swift in Sources */,
 				3E5C3B6924DDCEE300B6FD26 /* Date+Extension.swift in Sources */,
+				3EF5DDE524E058740046D782 /* Color+Extension.swift in Sources */,
+				3E767CD024F46E5E00475179 /* UITabBarController+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB0667B24E0E570002C5F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB066E524E1AF72002C5F4A /* Task.swift in Sources */,
+				3EB066E824E1AF7F002C5F4A /* ConvertDate.swift in Sources */,
+				3EB066E624E1AF7F002C5F4A /* Color+Extension.swift in Sources */,
+				3EB066EA24E1B010002C5F4A /* RowView.swift in Sources */,
+				3EB066E424E1AF2F002C5F4A /* TaskModel.swift in Sources */,
+				3EB0668B24E0E572002C5F4A /* JustTasksWidget.intentdefinition in Sources */,
+				3EB066E924E1AF7F002C5F4A /* Date+Extension.swift in Sources */,
+				3EB0668624E0E571002C5F4A /* JustTasksWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EB0668E24E0E572002C5F4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EB0667E24E0E570002C5F4A /* JustTasksWidgetExtension */;
+			targetProxy = 3EB0668D24E0E572002C5F4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3E81766624DDCC9F00249E20 /* LaunchScreen.storyboard */ = {
@@ -338,19 +501,22 @@
 		3E81766D24DDCC9F00249E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = JustTodayTasks/JustTodayTasks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = B6LXP9JCNK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JustTodayTasks/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.01;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuyOng.JustTodayTasks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -361,23 +527,68 @@
 		3E81766E24DDCC9F00249E20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = JustTodayTasks/JustTodayTasks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = B6LXP9JCNK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JustTodayTasks/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.01;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuyOng.JustTodayTasks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3EB0669124E0E572002C5F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6LXP9JCNK;
+				INFOPLIST_FILE = JustTasksWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HuyOng.JustTodayTasks.JustTasksWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EB0669224E0E572002C5F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6LXP9JCNK;
+				INFOPLIST_FILE = JustTasksWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HuyOng.JustTodayTasks.JustTasksWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -398,6 +609,15 @@
 			buildConfigurations = (
 				3E81766D24DDCC9F00249E20 /* Debug */,
 				3E81766E24DDCC9F00249E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB0669324E0E572002C5F4A /* Build configuration list for PBXNativeTarget "JustTasksWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB0669124E0E572002C5F4A /* Debug */,
+				3EB0669224E0E572002C5F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

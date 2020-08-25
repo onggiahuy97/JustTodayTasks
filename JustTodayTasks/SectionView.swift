@@ -17,13 +17,13 @@ struct SectionView: View {
                 NewTaskView
                 List {
                     ForEach(model.tasks.indices, id: \.self) { index in
-                        RowView(row: $model.tasks[index])
+                        RowView(row: self.$model.tasks[index])
                     }
                     .onMove { (from, to) in
-                        model.tasks.move(fromOffsets: from, toOffset: to)
+                        self.model.tasks.move(fromOffsets: from, toOffset: to)
                     }
                     .onDelete { indexSet in
-                        model.tasks.remove(atOffsets: indexSet)
+                        self.model.tasks.remove(atOffsets: indexSet)
                     }
                 }
             } else {
@@ -41,8 +41,8 @@ struct SectionView: View {
         HStack {
             Image(systemName: "person").hidden()
             TextField("New task", text: $text)
-            Image(systemName: "plus.diamond.fill").imageScale(.large).foregroundColor(.green).onTapGesture {
-                addTask()
+            Image(systemName: "plus.square.fill").imageScale(.large).foregroundColor(.green).onTapGesture {
+                self.addTask()
             }
         }
     }

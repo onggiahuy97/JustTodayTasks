@@ -12,44 +12,47 @@ import Combine
 struct ContentView: View {
     @ObservedObject var model: TaskModel
     @State private var showHistory = false
+    @State private var selection: Tab = .today
     
     var body: some View {
-        NavigationView {
-            SectionView(model: model)
-                .navigationBarTitle(Text("Tasks"))
-                .navigationBarItems(leading: EditButton(), trailing:
-                                        HStack(spacing: 16) {
-                                            Button(action: { showHistory = true }) {
-                                                Image(systemName: "xmark.bin.fill")
-                                                    .imageScale(.large)
+        TabView(selection: $selection) {
+            NavigationView {
+                SectionView(model: model)
+                    .navigationBarTitle(Text("Tasks"))
+                    .navigationBarItems(leading: EditButton()
+                                            .foregroundColor(.AccentColor()),
+                                        trailing:
+                                            HStack(spacing: 16) {
+                                                Button(action: { self.showHistory = true }) {
+                                                    Image(systemName: "arrow.up.bin.fill")
+                                                        .imageScale(.large)
+                                                }
+                                                Button(action: { self.model.isSorting.toggle() }) {
+                                                    Image(systemName: "arrow.up.arrow.down.square.fill")
+                                                        .imageScale(.large)
+                                                }
                                             }
-                                            Button(action: { model.isSorting.toggle() }) {
-                                                Image(systemName: "arrow.up.arrow.down.square.fill")
-                                                    .imageScale(.large)
-                                            }
-                                        }
-                                    )
-//                .toolbar(items: {
-//                    ToolbarItem(placement: .navigationBarLeading) {
-//                        EditButton()
-//                    }
-//                    ToolbarItem(placement: .navigationBarTrailing) {
-//                        HStack(spacing: 16) {
-//                            Button(action: { showHistory = true }) {
-//                                Image(systemName: "xmark.bin.fill")
-//                                    .imageScale(.large)
-//                            }
-//                            Button(action: { model.isSorting.toggle() }) {
-//                                Image(systemName: "arrow.up.arrow.down.square.fill")
-//                                    .imageScale(.large)
-//                            }
-//                        }
-//                    }
-//                })
+                                            .foregroundColor(.AccentColor())
+                    )
+                    .sheet(isPresented: $showHistory) {
+                        HistoryByDate(model: self.model)
+                    }
+            }
+            .tabItem {
+                Label("Today", systemImage: "list.bullet.rectangle")
+            }
+            .tag(Tab.today)
+            
+            MonthlyView()
+                .tabItem {
+                    Label("Monthly", systemImage: "calendar")
+                }
+                .tag(Tab.monthly)
         }
-        .sheet(isPresented: $showHistory) {
-            HistoryByDate(model: model)
-        }
+    }
+    
+    private enum Tab {
+        case monthly, today
     }
 }
 
@@ -58,3 +61,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(model: TaskModel())
     }
 }
+
