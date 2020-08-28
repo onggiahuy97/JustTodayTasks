@@ -10,6 +10,7 @@ import Foundation
 import Combine
 
 struct ContentView: View {
+    
     @ObservedObject var model: TaskModel
     @State private var showHistory = false
     @State private var selection: Tab = .today
@@ -19,24 +20,8 @@ struct ContentView: View {
             NavigationView {
                 SectionView(model: model)
                     .navigationBarTitle(Text("Tasks"))
-                    .navigationBarItems(leading: EditButton()
-                                            .foregroundColor(.AccentColor()),
-                                        trailing:
-                                            HStack(spacing: 16) {
-                                                Button(action: { self.showHistory = true }) {
-                                                    Image(systemName: "arrow.up.bin.fill")
-                                                        .imageScale(.large)
-                                                }
-                                                Button(action: { self.model.isSorting.toggle() }) {
-                                                    Image(systemName: "arrow.up.arrow.down.square.fill")
-                                                        .imageScale(.large)
-                                                }
-                                            }
-                                            .foregroundColor(.AccentColor())
-                    )
-                    .sheet(isPresented: $showHistory) {
-                        HistoryByDate(model: self.model)
-                    }
+                    .navigationBarItems(leading: EditButton().foregroundColor(.AccentColor()),
+                                        trailing: sectionTrailingButt)
             }
             .tabItem {
                 Label("Today", systemImage: "list.bullet.rectangle")
@@ -48,7 +33,26 @@ struct ContentView: View {
                     Label("Monthly", systemImage: "calendar")
                 }
                 .tag(Tab.monthly)
+            
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .sheet(isPresented: $showHistory) {
+            HistoryByDate(model: self.model)
+        }
+    }
+    
+    private var sectionTrailingButt: some View {
+        HStack(spacing: 16) {
+            Button(action: { self.showHistory = true }) {
+                Image(systemName: "arrow.up.bin.fill")
+                    .imageScale(.large)
+            }
+            Button(action: { self.model.isSorting.toggle() }) {
+                Image(systemName: "arrow.up.arrow.down.square.fill")
+                    .imageScale(.large)
+            }
+        }
+        .foregroundColor(.AccentColor())
     }
     
     private enum Tab {

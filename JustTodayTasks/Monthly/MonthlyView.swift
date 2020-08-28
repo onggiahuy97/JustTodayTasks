@@ -78,7 +78,7 @@ class MonthlyViewController: UIViewController {
         let cellRegistration = UICollectionView.CellRegistration<TextCell, MonthlyTask> { (cell, indexPath, task) in
             cell.monthlyTask = task
             cell.delegate = self
-            cell.layer.borderColor = UIColor.black.cgColor
+            cell.layer.borderColor = UIColor.secondarySystemBackground.cgColor
             cell.layer.borderWidth = 1
         }
         
